@@ -29,3 +29,49 @@ export const CORE_CONCEPTS = [
       'React components has a built-in state object. The state object is where you store property values that belong to the component. When the state object changes, the component re-renders.',
   },
 ];
+
+export const EXAMPLES = {
+  components: {
+    title: 'Component',
+    description:
+      'Components are ready made HTML tags that the programer writes them.',
+    code: `
+    function Welcome() {
+    return <h1>Hello World!</h1>}`,
+  },
+  jsx: {
+    title: 'JSX',
+    description: 'JSX enables us to write Javascript code inside HTML.',
+    code: `
+    <div>
+      <h1>Welcome{userName}</h1>
+      <p>Learning React</p>
+    </div>`,
+  },
+  props: {
+    title: 'Props',
+    description:
+      'Props are function arguments that can pass within the HTML into the component functions.',
+    code: `
+    function Welcome(props) {
+      return <h1> Hi, {props.name}</h1>
+    }`,
+  },
+  state: {
+    title: 'State',
+    description:
+      'States enable the React to render the page upon change of activity on the page.',
+    code: `
+    function Counter() {
+      const [isVisible, setVisible] = useState(false);
+      
+      function handleClick() {
+        setVisible(true);
+        }
+      return (
+      <div>
+        <button onClick={handleClick}>Show more</button>
+      </div>
+    )}`,
+  },
+};
