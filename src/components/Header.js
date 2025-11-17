@@ -1,4 +1,4 @@
-import reactCoreConcepts from './assets/react-core-concepts.png';
+import reactCoreConcepts from '../assets/react-core-concepts.png';
 
 function Header() {
   const arrOfWords = ['Core', 'Basic', 'Primary', 'Initial'];
@@ -9,7 +9,7 @@ function Header() {
     <header>
       <img src={reactCoreConcepts} alt="React core concepts" />
       <h1>React Basics</h1>
-      <p>React {word} structure and Concepts</p>
+      <p>React {word} Structure and Concepts</p>
     </header>
   );
 }
